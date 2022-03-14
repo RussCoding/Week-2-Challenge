@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* get rid of blue underline on links */
+a {
+    text-decoration: none;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: chartreuse;
+}
+/* flex header and its elements to keep on one line and evenly separate to each side of page */
+.header main {
+    display: flex;
+    align-items: center;
+   
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+}
+.header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.header nav ul li {
+    margin-left: 25px;
+    margin-right: 5px;
+}
+/* sets avatar size to reasonable amount */
+.header img {
+    width: 60px;
+    height: 60px;
+}
+
+section {
+    padding: 50px;
+}
+
+.empty {
+    padding: 100px;
+    background-color: bisque;
+}
+/* flex boxes for about section separates title and content */
+.about {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: aqua;
+    align-items: center;
+}
+
+.about h2 {
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.about p {
+    padding-top: 25px;
+    padding-left: 5px;
+    border-left: 2px solid black;
+
+}
+
+.work {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .projects {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    border-left: 2px solid black;
+    padding-left: 10px;
+}
+/* makes image scale with size of webpage so it doesnt go off screen */
+.work .projects .first img {
+    width: 800px;
+    height: 300px;
+    max-width: 80%;
+    padding-bottom: 10px;
+}
+
+.work .projects .rest img {
+    width: 400px;
+    height: 150px;
+    max-width: 40%;
+    padding-bottom: 10px;
+}
+/* contact section */
+.contact {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: coral;
+}
+
+.contact h2 {
+    border-right: 2px solid black;
+}
+
+.contact ul {
+    display:flex ;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding-right: 25px;
+    
+}
+
+.contact ul li {
+    margin-right: 20px;
+    margin-left: 20px;
+}
